@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scrum.ScrumController">
+   <children>
+      <Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="21.0" layoutY="30.0" text="Calcolatrice" />
+            <TextField fx:id="Tf1" layoutX="21.0" layoutY="71.0" />
+            <TextField fx:id="Tf2" layoutX="21.0" layoutY="113.0" />
+            <TextField fx:id="Rf" layoutX="21.0" layoutY="206.0" prefHeight="25.0" prefWidth="238.0" />
+            <MenuButton layoutX="21.0" layoutY="146.0" mnemonicParsing="false" text="Operazioni di base">
+              <items>
+                <MenuItem fx:id="Sum" mnemonicParsing="false" onAction="#Sum" text="Somma" />
+                <MenuItem fx:id="Dif" mnemonicParsing="false" onAction="#Dif" text="Differenza" />
+                  <MenuItem fx:id="Molt" mnemonicParsing="false" onAction="#Molt" text="Moltiplicazione" />
+                  <MenuItem fx:id="Div" mnemonicParsing="false" onAction="#Div" text="Divisione" />
+              </items>
+            </MenuButton>
+            <Button fx:id="ButtonOff" layoutX="21.0" layoutY="256.0" mnemonicParsing="false" onAction="#Off" text="Off" />
+            <MenuButton layoutX="190.0" layoutY="146.0" mnemonicParsing="false" text="Operazioni trigonometriche">
+              <items>
+                <MenuItem fx:id="MSin" mnemonicParsing="false" onAction="#Sin" text="Seno" />
+                <MenuItem fx:id="MCos" mnemonicParsing="false" onAction="#Cos" text="Coseno" />
+                  <MenuItem fx:id="MTan" mnemonicParsing="false" onAction="#Tan" text="Tangente" />
+              </items>
+            </MenuButton>
+            <MenuButton layoutX="407.0" layoutY="146.0" mnemonicParsing="false" text="Operazioni avanzate">
+              <items>
+                <MenuItem fx:id="MLog10" mnemonicParsing="false" onAction="#Log10" text="Logaritmo base 10" />
+                <MenuItem fx:id="MLogN" mnemonicParsing="false" onAction="#LogN" text="Logaritmo naturale" />
+                  <MenuItem fx:id="Msqrt2" mnemonicParsing="false" onAction="#Sqrt2" text="Radice quadrata" />
+                  <MenuItem fx:id="MsqrtN" mnemonicParsing="false" onAction="#SqrtN" text="Radice n-esima" />
+                  <MenuItem fx:id="Mpot" mnemonicParsing="false" onAction="#Pot" text="Potenza" />
+              </items>
+            </MenuButton>
+            <Label fx:id="Label1" layoutX="23.0" layoutY="54.0" />
+            <Label fx:id="Label2" layoutX="23.0" layoutY="96.0" />
+            <Label layoutX="250.0" layoutY="30.0" text="Inserisci due numeri nei Text Field" />
+            <Label layoutX="250.0" layoutY="46.0" text="Seleziona l'operazione dall'apposito menù" />
+            <Label layoutX="250.0" layoutY="63.0" prefHeight="17.0" prefWidth="350.0" text="Nota: per alcune operazioni inserire il numero solo nel primo TF" />
+         </children>
+      </Pane>
+      <Button fx:id="ButtonOn" mnemonicParsing="false" onAction="#On" text="On" />
+   </children>
+</StackPane>
