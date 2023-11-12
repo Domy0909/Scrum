@@ -30,7 +30,7 @@ public class Operazioni_base {
         if (b != 0) {
             return a/b;
         } else {
-            throw new ArithmeticException("Divisione per zero non consentita");
+            throw new ArithmeticException("Divisione per zero non consentita!");
         }
     }
 
